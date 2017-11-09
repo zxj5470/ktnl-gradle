@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "Begin build"
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )
-set PATH=%PATH%;%CD%kotlin-native-macos-0.4/bin/
-echo $DIR
+set PATH=%PATH%
+
 if [ x$TARGET == x ]; then
 case "$OSTYPE" in
   darwin*)  TARGET=macbook ;;

@@ -17,3 +17,7 @@ Alternatively you can run artifact directly
 
 It will print number of all unique entries in fifth column
 (Family, zero-based index) in first 100 rows of the CSV file.
+
+CI|status
+:---|:---:
+Travis CI|[![Build Status](https://travis-ci.org/zxj5470/ktnl-gradle.svg?branch=master)](https://travis-ci.org/zxj5470/ktnl-gradle)
