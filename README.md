@@ -1,23 +1,62 @@
-# CSV parser
+# KtNL
 
- This example shows how one could implement simple comma separated values reader and parser in Kotlin.
-A sample data [European Mammals Red List for 2009](https://data.europa.eu/euodp/en/data/dataset?res_format=CSV)
-from EU is being used.
 
-To build use `../gradlew build` or `./build.sh`.
 
-To run use `../gradlew run`
+Kotlin Native for Lisp
 
-To change run arguments, change property runArgs in gradle.propeties file 
-or pass `-PrunArgs="./European_Mammals_Red_List_Nov_2009.csv 4 100"` to gradle run. 
 
-Alternatively you can run artifact directly 
+Travis CI:[![Build Status](https://travis-ci.org/zxj5470/ktnl-gradle.svg?branch=master)](https://travis-ci.org/zxj5470/ktnl-gradle)
 
-    ./build/konan/bin/CsvParser/CsvParser.kexe ./European_Mammals_Red_List_Nov_2009.csv 4 100
 
-It will print number of all unique entries in fifth column
-(Family, zero-based index) in first 100 rows of the CSV file.
+[![GitHub language count](https://img.shields.io/badge/language-Kotlin--Native-orange.svg)]()
+[![GitHub language count](https://img.shields.io/badge/Powerd%20by-JetBrains%20CLion-blue.svg)]()
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+* [KtNL](#ktnl)
+	* [Platform](#platform)
+	* [Build and Run](#build-and-run)
+		* [Build](#build)
+	* [Dependencies](#dependencies)
+	* [Completed](#completed)
+
+<!-- /code_chunk_output -->
+
+
+## Platform
+Run in OS X  or Linux.
+
+**Windows has not been supported presently.**`(JetBrains Kotlin: “What？”)`
+
+## Build and Run
+```bash
+git clone https://github.com/zxj5470/ktnl
+
+cd ktnl/cmake-build-debug
+
+./ktnl.kexe ../kt.ktnl
+
+```
+### Build
+- git clone the repositry and open with `CLion 2017.3 EAP` or later version.And Run the `kexe`.
+
+- Or run the `build.sh` (under the `OS X` because it was written in `OS X`)
+
+## Dependencies
+- konan (Of Course)
+
+## Completed
+There are so many things to do,and I have just finished these as follows.
+
+```scheme
+(define a 2333)
+(define ice-1000 "Zython")
+```
+outputs:
+```kotlin
+{a: Int = 23333, ice1000: String = "Zython"}
+```
 CI|status
 :---|:---:
 Travis CI|[![Build Status](https://travis-ci.org/zxj5470/ktnl-gradle.svg?branch=master)](https://travis-ci.org/zxj5470/ktnl-gradle)

@@ -13,7 +13,7 @@ subprojects {
     }
 }
 //windows
-task buildInOSX(type: Exec) {
+task buildInLinux(type: Exec) {
     workingDir projectDir.canonicalPath
     commandLine "${projectDir.canonicalPath}/ktnl/build.sh"
 }

@@ -2,20 +2,21 @@ sudo: required
 language: java
 language: kotlin
 
-os: osx
+#os: osx
 
 jdk:
 - oraclejdk8
 
 script:
-- "./gradlew buildInOSX"
+- "./gradlew buildInLinux"
+- bash <(curl -s https://codecov.io/bash)
 before_install:
   - chmod a+x gradlew
 
 before_script:
-  - wget https://github.com/JetBrains/kotlin-native/releases/download/v0.4/kotlin-native-macos-0.4.tar.gz -O /tmp/kotlin-native-macos-0.4.tar.gz
-  - tar -xvf /tmp/kotlin-native-macos-0.4.tar.gz
-  - export PATH=$PATH:$PWD/kotlin-native-macos-0.4/bin/
+  - wget https://github.com/JetBrains/kotlin-native/releases/download/v0.4/kotlin-native-linux-0.4.tar.gz -O /tmp/kotlin-native-linux-0.4.tar.gz
+  - tar -xvf /tmp/kotlin-native-linux-0.4.tar.gz
+  - export PATH=$PATH:$PWD/kotlin-native-linux-0.4/bin/
 
 cache:
   apt: true
