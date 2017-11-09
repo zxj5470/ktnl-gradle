@@ -9,10 +9,18 @@ subprojects {
 
         dependencies {
             classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:+"
+            
         }
     }
 }
-//windows
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+repositories {
+	mavenCentral()
+}
+
+
 task buildInLinux(type: Exec) {
     workingDir projectDir.canonicalPath
     commandLine "${projectDir.canonicalPath}/ktnl/build.sh"
