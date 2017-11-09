@@ -1,0 +1,7 @@
+(define ice-1000 10000000000000)
+(define big-data 1000000000000000000000000000000)
+(set! ice1000 Zython)
+(define boynextdoor 0.233)
+(define van 233.3)
+(define zxj5470 "哲学家")
+(set! van "暗黑佟♂Dark♂为")
