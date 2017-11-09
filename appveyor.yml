@@ -3,6 +3,5 @@ environment:
 #
 
 build_script:
-  - gradlew check --info
   - gradlew buildSh
 #
