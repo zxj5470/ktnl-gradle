@@ -2,7 +2,7 @@
 
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )
 PATH=$DIR/../../dist/bin:$DIR/../../bin:$PATH:~/.konan/kotlin-native-macos-0.4/bin
-
+echo $DIR
 if [ x$TARGET == x ]; then
 case "$OSTYPE" in
   darwin*)  TARGET=macbook ;;
