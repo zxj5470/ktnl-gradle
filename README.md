@@ -5,7 +5,10 @@
 Kotlin Native for Lisp
 
 
-Travis CI:[![Build Status](https://travis-ci.org/zxj5470/ktnl-gradle.svg?branch=master)](https://travis-ci.org/zxj5470/ktnl-gradle)
+CI|status
+:---|:---:
+Travis CI|[![Build Status](https://travis-ci.org/zxj5470/ktnl-gradle.svg?branch=master)](https://travis-ci.org/zxj5470/ktnl-gradle)
+
 
 
 [![GitHub language count](https://img.shields.io/badge/language-Kotlin--Native-orange.svg)]()
@@ -57,6 +60,7 @@ outputs:
 ```kotlin
 {a: Int = 23333, ice1000: String = "Zython"}
 ```
+
 CI|status
 :---|:---:
 Travis CI|[![Build Status](https://travis-ci.org/zxj5470/ktnl-gradle.svg?branch=master)](https://travis-ci.org/zxj5470/ktnl-gradle)
