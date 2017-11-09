@@ -6,7 +6,7 @@ jdk:
 - oraclejdk8
 
 script:
-- "./gradlew buildOSX"
+- "./gradlew buildInOSX"
 before_install:
   - chmod a+x gradlew
 
