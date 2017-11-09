@@ -3,5 +3,5 @@ environment:
 #
 
 build_script:
-  - gradlew buildSh
+  - gradlew buildInWindows
 #
