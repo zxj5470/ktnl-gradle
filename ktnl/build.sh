@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Begin build"
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )
-PATH=$DIR/../../dist/bin:$DIR/../../bin:$PATH:~/.konan/kotlin-native-macos-0.4/bin
+set PATH=%PATH%;%CD%kotlin-native-macos-0.4/bin/
 echo $DIR
 if [ x$TARGET == x ]; then
 case "$OSTYPE" in
@@ -22,8 +22,6 @@ COMPILER_ARGS=${!var} # add -opt for an optimized build.
 mkdir -p $DIR/build/c_interop/
 mkdir -p $DIR/build/bin/
 echo $PATH
-konanc $COMPILER_ARGS -target $TARGET $DIR/src/main/kotlin \
-       -o $DIR/build/bin/ktnl || exit 1
 konanc $COMPILER_ARGS -target $TARGET $DIR/src/main/kotlin \
        -o $DIR/build/bin/ktnl || exit 1
 echo "Artifact path is $DIR/build/bin/ktnl.kexe"

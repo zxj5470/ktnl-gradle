@@ -12,8 +12,8 @@ subprojects {
         }
     }
 }
-
-task buildSh(type: Exec) {
-    commandLine "${projectDir.canonicalPath}/ktnl/build.sh"
+//windows
+task buildInWindows(type: Exec) {
     workingDir projectDir.canonicalPath
+    commandLine "${projectDir.canonicalPath}/ktnl/build.bat"
 }
