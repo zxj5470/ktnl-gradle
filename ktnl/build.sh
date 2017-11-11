@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 echo "Begin build"
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )
-set PATH=%PATH%
+a=$(ls -d ~/.konan/ko* | tail -n 1)
+export PATH=$a/bin:$PATH
 
 if [ x$TARGET == x ]; then
 case "$OSTYPE" in
