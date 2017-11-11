@@ -14,10 +14,14 @@ package com.github.zxj5470.ktnl.parser
 enum class Token(val token: Int= 0xcafe) {
     DEFINE,
     NUMBER,
+    LAMBDA,
+    FUNCTION
 }
 
 enum class Status(val status: Int = 0xbabe) {
     DEFINING,
     QUOTING,
-    SETTING
+    SETTING,
+    LAMBDAING,
+    FUNCTING
 }
