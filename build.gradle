@@ -25,3 +25,7 @@ task buildInLinux(type: Exec) {
     workingDir projectDir.canonicalPath
     commandLine "${projectDir.canonicalPath}/ktnl/build.sh"
 }
+task buildInWindows(type:Exec){
+    workingDir "${projectDir.canonicalPath}/ktnl"
+    commandLine "${projectDir.canonicalPath}/ktnl/build.bat"
+}
